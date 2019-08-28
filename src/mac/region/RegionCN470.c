@@ -374,13 +374,21 @@ void RegionCN470InitDefaults( InitDefaultsParams_t* params )
             }
 
             // Initialize the channels default mask
+			#if 0
             NvmCtx.ChannelsDefaultMask[0] = 0xFFFF;
             NvmCtx.ChannelsDefaultMask[1] = 0xFFFF;
             NvmCtx.ChannelsDefaultMask[2] = 0xFFFF;
             NvmCtx.ChannelsDefaultMask[3] = 0xFFFF;
             NvmCtx.ChannelsDefaultMask[4] = 0xFFFF;
             NvmCtx.ChannelsDefaultMask[5] = 0xFFFF;
-
+			#else
+			NvmCtx.ChannelsDefaultMask[0] = 0x00FF;
+            NvmCtx.ChannelsDefaultMask[1] = 0x0000;
+            NvmCtx.ChannelsDefaultMask[2] = 0x0000;
+            NvmCtx.ChannelsDefaultMask[3] = 0x0000;
+            NvmCtx.ChannelsDefaultMask[4] = 0x0000;
+            NvmCtx.ChannelsDefaultMask[5] = 0x0000;
+			#endif
             // Update the channels mask
             RegionCommonChanMaskCopy( NvmCtx.ChannelsMask, NvmCtx.ChannelsDefaultMask, 6 );
             break;
