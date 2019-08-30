@@ -1,0 +1,14 @@
+.\objects\loramacadr.o: ..\..\..\src\mac\LoRaMacAdr.c
+.\objects\loramacadr.o: ..\..\..\src\mac\region/Region.h
+.\objects\loramacadr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\loramacadr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\loramacadr.o: ..\..\..\src\boards\utilities.h
+.\objects\loramacadr.o: ..\..\..\src\mac\LoRaMac.h
+.\objects\loramacadr.o: ..\..\..\src\system\timer.h
+.\objects\loramacadr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\loramacadr.o: ..\..\..\src\system\systime.h
+.\objects\loramacadr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\objects\loramacadr.o: ..\..\..\src\radio\radio.h
+.\objects\loramacadr.o: ..\..\..\src\mac\LoRaMacTypes.h
+.\objects\loramacadr.o: ..\..\..\src\mac\region/Region.h
+.\objects\loramacadr.o: ..\..\..\src\mac\LoRaMacAdr.h

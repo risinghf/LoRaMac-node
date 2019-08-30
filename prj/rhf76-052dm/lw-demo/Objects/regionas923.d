@@ -1,0 +1,15 @@
+.\objects\regionas923.o: ..\..\..\src\mac\region\RegionAS923.c
+.\objects\regionas923.o: ..\..\..\src\boards\utilities.h
+.\objects\regionas923.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\regionas923.o: ..\..\..\src\mac\region\RegionCommon.h
+.\objects\regionas923.o: ..\..\..\src\mac\LoRaMacTypes.h
+.\objects\regionas923.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\regionas923.o: ..\..\..\src\system\timer.h
+.\objects\regionas923.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\regionas923.o: ..\..\..\src\mac\region/Region.h
+.\objects\regionas923.o: ..\..\..\src\mac\LoRaMac.h
+.\objects\regionas923.o: ..\..\..\src\system\systime.h
+.\objects\regionas923.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\objects\regionas923.o: ..\..\..\src\radio\radio.h
+.\objects\regionas923.o: ..\..\..\src\mac\region/Region.h
+.\objects\regionas923.o: ..\..\..\src\mac\region\RegionAS923.h

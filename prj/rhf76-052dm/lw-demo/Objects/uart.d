@@ -1,0 +1,9 @@
+.\objects\uart.o: ..\..\..\src\system\uart.c
+.\objects\uart.o: ..\..\..\src\boards\uart-board.h
+.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: ..\..\..\src\system\uart.h
+.\objects\uart.o: ..\..\..\src\system\fifo.h
+.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\uart.o: ..\..\..\src\system\gpio.h
+.\objects\uart.o: ..\..\..\src\boards\pinName-board.h
+.\objects\uart.o: ..\..\..\src\boards\pinName-ioe.h

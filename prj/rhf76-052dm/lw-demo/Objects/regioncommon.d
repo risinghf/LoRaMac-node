@@ -1,0 +1,15 @@
+.\objects\regioncommon.o: ..\..\..\src\mac\region\RegionCommon.c
+.\objects\regioncommon.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\regioncommon.o: ..\..\..\src\radio\radio.h
+.\objects\regioncommon.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\regioncommon.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\regioncommon.o: ..\..\..\src\boards\utilities.h
+.\objects\regioncommon.o: ..\..\..\src\mac\region\RegionCommon.h
+.\objects\regioncommon.o: ..\..\..\src\mac\LoRaMacTypes.h
+.\objects\regioncommon.o: ..\..\..\src\system\timer.h
+.\objects\regioncommon.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\regioncommon.o: ..\..\..\src\mac\region/Region.h
+.\objects\regioncommon.o: ..\..\..\src\mac\LoRaMac.h
+.\objects\regioncommon.o: ..\..\..\src\system\systime.h
+.\objects\regioncommon.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\objects\regioncommon.o: ..\..\..\src\mac\region/Region.h

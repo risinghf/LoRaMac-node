@@ -1,0 +1,9 @@
+.\objects\systime.o: ..\..\..\src\system\systime.c
+.\objects\systime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\systime.o: ..\..\..\src\boards\rtc-board.h
+.\objects\systime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\systime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\systime.o: ..\..\..\src\system\timer.h
+.\objects\systime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\systime.o: ..\..\..\src\system\systime.h
+.\objects\systime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
