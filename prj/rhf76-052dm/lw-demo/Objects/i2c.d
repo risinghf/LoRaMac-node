@@ -1,9 +1,0 @@
-.\objects\i2c.o: ..\..\..\src\system\i2c.c
-.\objects\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\i2c.o: ..\..\..\src\boards\utilities.h
-.\objects\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\i2c.o: ..\..\..\src\boards\i2c-board.h
-.\objects\i2c.o: ..\..\..\src\system\i2c.h
-.\objects\i2c.o: ..\..\..\src\system\gpio.h
-.\objects\i2c.o: ..\..\..\src\boards\pinName-board.h
-.\objects\i2c.o: ..\..\..\src\boards\pinName-ioe.h
