@@ -332,7 +332,7 @@
             <v6WtE>0</v6WtE>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32L072xx,USE_FULL_LL_DRIVER,REGION_CN470,REGION_EU868</Define>
+              <Define>USE_HAL_DRIVER,STM32L072xx,USE_FULL_LL_DRIVER,REGION_CN470</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\src\apps\LoRaMac\classA\RHF76-052DM;..\..\..\src\apps\LoRaMac\common;..\..\..\src\apps\LoRaMac\common\LmHandler;..\..\..\src\apps\LoRaMac\common\LmHandler\packages;..\..\..\src\boards\mcu\stm32\cmsis;..\..\..\src\boards\mcu\stm32\EEPROM_Emul\Core;..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Inc;..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Inc\Legacy;..\..\..\src\boards\mcu\stm32;..\..\..\src\boards;..\..\..\src\boards\RHF76-052DM;..\..\..\src\boards\RHF76-052DM\cmsis;..\..\..\src\mac;..\..\..\src\mac\region;..\..\..\src\peripherals\soft-se;..\..\..\src\radio;..\..\..\src\radio\sx1276;..\..\..\src\system</IncludePath>
             </VariousControls>
