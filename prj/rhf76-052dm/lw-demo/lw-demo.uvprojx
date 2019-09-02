@@ -7,9 +7,10 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>NDebug</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32L072CBTx</Device>
@@ -46,14 +47,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\</OutputDirectory>
+          <OutputDirectory>.\Objects\</OutputDirectory>
           <OutputName>lw-demo</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>.\</ListingPath>
+          <ListingPath>.\Listings\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -124,47 +125,6 @@
             <HexOffset>0</HexOffset>
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
-          <Simulator>
-            <UseSimulator>0</UseSimulator>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>1</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Simulator>
-          <Target>
-            <UseTarget>1</UseTarget>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>0</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <RestoreTracepoints>1</RestoreTracepoints>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Target>
-          <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>0</TargetSelection>
-          <SimDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-          </SimDlls>
-          <TargetDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
-          </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
@@ -172,12 +132,12 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -226,7 +186,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -296,17 +256,17 @@
                 <Size>0x0</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
@@ -316,7 +276,7 @@
                 <Size>0x20000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
@@ -362,7 +322,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -372,9 +332,9 @@
             <v6WtE>0</v6WtE>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>USE_HAL_DRIVER,STM32L072xx,USE_FULL_LL_DRIVER,REGION_CN470,REGION_EU868</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\..\..\src\apps\LoRaMac\classA\RHF76-052DM;..\..\..\src\apps\LoRaMac\common;..\..\..\src\apps\LoRaMac\common\LmHandler;..\..\..\src\apps\LoRaMac\common\LmHandler\packages;..\..\..\src\boards\mcu\stm32\cmsis;..\..\..\src\boards\mcu\stm32\EEPROM_Emul\Core;..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Inc;..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Inc\Legacy;..\..\..\src\boards\mcu\stm32;..\..\..\src\boards;..\..\..\src\boards\RHF76-052DM;..\..\..\src\boards\RHF76-052DM\cmsis;..\..\..\src\mac;..\..\..\src\mac\region;..\..\..\src\peripherals\soft-se;..\..\..\src\radio;..\..\..\src\radio\sx1276;..\..\..\src\system</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -415,7 +375,614 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>apps</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\apps\LoRaMac\classA\RHF76-052DM\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>NvmCtxMgmt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\apps\LoRaMac\common\NvmCtxMgmt.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>board/mcu</GroupName>
+          <Files>
+            <File>
+              <FileName>utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\utilities.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\adc-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\delay-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\eeprom-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\gpio-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\i2c-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpm-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\lpm-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\rtc-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\spi-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>sx1276-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\sx1276-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart-board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\uart-board.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32l0xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\cmsis\system_stm32l0xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32l072xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\src\boards\RHF76-052DM\cmsis\arm-std\startup_stm32l072xx.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>board/hal-drv</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32l0xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_adc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_comp_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_comp_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cortex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_crc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_crc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_cryp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cryp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_cryp_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cryp_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_dac_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dac_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_firewall.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_firewall.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_flash_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_flash_ramfunc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash_ramfunc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_i2c_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_irda.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_irda.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_lptim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_lptim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_msp_template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_msp_template.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_pcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_pcd_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pcd_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_pwr_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_rcc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_rtc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rtc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_smartcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_smartcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_smartcard_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_smartcard_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_smbus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_smbus.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_tim_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_tim_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_tsc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_tsc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_uart_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_uart_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_hal_wwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_wwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_comp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_comp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_crs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_crs.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_lptim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_lptim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_lpuart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l0xx_ll_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\boards\mcu\stm32\STM32L0xx_HAL_Driver\Src\stm32l0xx_ll_utils.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lorawan/mac</GroupName>
+          <Files>
+            <File>
+              <FileName>LoRaMac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMac.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacAdr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacAdr.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacClassB.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacClassB.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacCommands.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacCommands.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacConfirmQueue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacConfirmQueue.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacCrypto.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacCrypto.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacParser.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacParser.c</FilePath>
+            </File>
+            <File>
+              <FileName>LoRaMacSerializer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\LoRaMacSerializer.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\peripherals\soft-se\aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>cmac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\peripherals\soft-se\cmac.c</FilePath>
+            </File>
+            <File>
+              <FileName>soft-se.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\peripherals\soft-se\soft-se.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lorawan/region</GroupName>
+          <Files>
+            <File>
+              <FileName>Region.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\Region.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionAS923.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionAS923.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionAU915.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionAU915.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionCN470.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionCN470.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionCN779.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionCN779.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionCommon.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionCommon.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionEU433.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionEU433.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionEU868.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionEU868.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionIN865.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionIN865.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionKR920.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionKR920.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionRU864.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionRU864.c</FilePath>
+            </File>
+            <File>
+              <FileName>RegionUS915.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\mac\region\RegionUS915.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>radio</GroupName>
+          <Files>
+            <File>
+              <FileName>sx1276.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\radio\sx1276\sx1276.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>system</GroupName>
+          <Files>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\eeprom.c</FilePath>
+            </File>
+            <File>
+              <FileName>fifo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\fifo.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>nvmm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\nvmm.c</FilePath>
+            </File>
+            <File>
+              <FileName>systime.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\systime.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\system\uart.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
