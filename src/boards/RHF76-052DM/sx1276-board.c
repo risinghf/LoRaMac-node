@@ -90,7 +90,11 @@ Gpio_t AntSwitchHF;
 Gpio_t AntSwitchLF;
 
 /** 0: Band unknown, 1: LF band, 2: HF band */
-uint8_t sx1276_band;
+#if defined (REGION_CN470) || (REGION_EU433)
+uint8_t sx1276_band = 1;
+#else
+uint8_t sx1276_band = 2;
+#endif
 
 /*!
  * Debug GPIO pins objects
