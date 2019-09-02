@@ -82,15 +82,7 @@ Gpio_t TcxoPower;
 /*!
  * Antenna switch GPIO pins objects
  */
-Gpio_t AntSwitchRx;
-Gpio_t AntSwitchTxBoost;
-Gpio_t AntSwitchTxRfo;
-
-Gpio_t AntSwitchHF;
-Gpio_t AntSwitchLF;
-
-/** 0: Band unknown, 1: LF band, 2: HF band */
-uint8_t sx1276_band;
+Gpio_t AntSwitchRxTx;
 
 /*!
  * Debug GPIO pins objects
