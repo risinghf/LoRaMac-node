@@ -18,6 +18,38 @@
 
 - 如果需要配置所选择的频率计划下初始的信道，则到工程文件中src/mac/region文件夹中，找到对应的region文件，进入后，找到类似`RegionCN470InitDefaults`函数即可修改
 
-- 模块硬件上连接好对应的串口，波特率为115200，运行程序，则可以看到串口上开始打印如下图所示的log信息：
+- 模块硬件上连接好对应的串口，波特率为115200，运行程序，则可以看到串口上开始打印如下图所示的log信息，具体信息会不一样，但总体格式如下：
 
-  ![1567477009972](C:\Users\XinghaiQin\AppData\Roaming\Typora\typora-user-images\1567477009972.png)
+  ###### ===== ClassA demo application v1.0.RC1 ==== ######
+  
+  DevEui      : 34-38-37-32-5B-37-68-0B
+  AppEui      : 00-00-00-00-00-00-00-00
+  AppKey      : 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
+  
+  ###### ===== JOINED ==== ######
+  
+  ABP
+  
+  DevAddr     : 014B85D5
+  NwkSKey     : 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
+  AppSKey     : 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
+  
+  
+  ###### ===== MCPS-Request ==== ######
+  STATUS      : OK
+  
+  ###### ===== MCPS-Confirm ==== ######
+  STATUS      : OK
+  
+  ###### ===== UPLINK FRAME 1 ==== ######
+  
+  CLASS       : A
+  
+  TX PORT     : 2
+  TX DATA     : UNCONFIRMED
+  00 
+  
+  DATA RATE   : DR_0
+  U/L FREQ    : 471300000
+  TX POWER    : 0
+  CHANNEL MASK: 00FF 0000 0000 0000 0000 
